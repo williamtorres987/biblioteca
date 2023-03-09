@@ -9,6 +9,13 @@ public class Locacao {
     private Livro livro;
     private Livro livroLocado;
 
+    public Locacao() {
+        this.funcionario = new Funcionario();
+        this.usuario = new Usuario();
+        this.livro = new Livro();
+        this.livroLocado = new Livro();
+    }
+
     public double getValorLocacao() {
         return valorLocacao;
     }
