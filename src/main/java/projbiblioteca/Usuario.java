@@ -8,7 +8,7 @@ public class Usuario {
     private Endereco endereco;
 
     public Usuario() {
-        this.endereco = new Endereco ();
+        this.endereco = new Endereco();
 
     }
 
