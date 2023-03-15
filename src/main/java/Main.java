@@ -22,24 +22,48 @@ public class Main {
                     "Digite aqui a opção ");
             opcao = scanner.nextByte();
             scanner.nextLine();
-            switch (opcao){
+            switch (opcao) {
                 case 1:
-                    System.out.println("Cadastro do funcionário: \n"+ "Nome: ");
+                    System.out.println("Cadastro do funcionário: \n" + "Nome: ");
                     objetoLocacao.getFuncionario().setNome(scanner.nextLine());
                     System.out.println("CPF: ");
                     objetoLocacao.getFuncionario().setCpf(scanner.nextLong());
-
-                    /*
-                    TODO: pedir para o usuário que está cadastrando um funcionário os seguintes dados abaixo:
-                    cargo do funcionario.
-                    salário do funcionario.
-                    rua do funcionario.
-                    numero do funcionario.
-                    bairro do funcionario.
-                     */
+                    System.out.println("Digite seu cargo: ");
+                    objetoLocacao.getFuncionario().setCargo(scanner.next());
+                    System.out.println("Digite seu salário: ");
+                    objetoLocacao.getFuncionario().setSalario(scanner.nextLong());
+                    System.out.println("Digite sua rua: ");
+                    objetoLocacao.getFuncionario().getEndereco().setRua(scanner.next());
+                    System.out.println("Digite o número da sua rua: ");
+                    objetoLocacao.getFuncionario().getEndereco().setNumero(scanner.nextInt());
+                    System.out.println("Digite o seu bairro: ");
+                    objetoLocacao.getFuncionario().getEndereco().setBairro(scanner.next());
+                    break;
+                case 2:
+                    System.out.println("Cadastro do Usuário: \n" + "Nome: ");
+                    objetoLocacao.getUsuario().setNome(scanner.nextLine());
+                    System.out.println("Digite seu código de usuário: ");
+                    objetoLocacao.getUsuario().setCodigo(scanner.nextInt());
+                    System.out.println("CPF: ");
+                    objetoLocacao.getUsuario().setCpf(scanner.nextLong());
+                    System.out.println("\nEndereco \n" + "Rua:");
+                    objetoLocacao.getUsuario().getEndereco().setRua(scanner.next());
+                    System.out.println("Digite o número da sua rua: ");
+                    objetoLocacao.getUsuario().getEndereco().setNumero(scanner.nextInt());
+                    System.out.println("Digite o seu bairro: ");
+                    objetoLocacao.getUsuario().getEndereco().setBairro(scanner.next());
+                    break;
+                case 3:
+                    System.out.println("Locação de livro: \n" + "Nome do titulo do livro desejado: ");
+                    objetoLocacao.getLivro().setTitulo(scanner.nextLine());
+                    System.out.println("Digite o gênero literário do livro: ");
+                    objetoLocacao.getLivro().setGenero(scanner.nextLine());
+                    System.out.println("Digite o autor do livro desejado: ");
+                    objetoLocacao.getLivro().setAutor(scanner.nextLine());
+                    break;
             }
 
-        }
+        }while (opcao!=9);
 
     }
 }
