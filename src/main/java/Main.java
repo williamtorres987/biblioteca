@@ -73,8 +73,6 @@ public class Main {
 //                            case 1:
 //                        }
 //                    }
-
-                    //TODO: Próximo passo vai ser criar os toString para as classes e chamar nos nossos sout
             }
 
         } while (opcao != 9);
