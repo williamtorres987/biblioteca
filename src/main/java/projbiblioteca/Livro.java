@@ -38,4 +38,13 @@ public class Livro {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "Livro:" +
+                "titulo=" + titulo + "\n" +
+                "genero=" + genero + "\n" +
+                "autor=" + autor + "\n" +
+                "status=" + status;
+    }
 }
