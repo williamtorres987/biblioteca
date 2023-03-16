@@ -73,6 +73,7 @@ public class Main {
 //                            case 1:
 //                        }
 //                    }
+                    //TODO: FAZER OS TOSTRING PARA USUARIO, ENDERECO, LOCAÇAO
             }
 
         } while (opcao != 9);
