@@ -43,4 +43,13 @@ public class Usuario {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario:" +
+                "nome=" + nome + "\n" +
+                "codigo=" + codigo + "\n" +
+                "cpf=" + cpf + "\n" +
+                "endereco=" + endereco + "\n";
+    }
 }

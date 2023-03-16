@@ -63,4 +63,16 @@ public class Locacao {
     public void setLivroLocado(Livro livroLocado) {
         this.livroLocado = livroLocado;
     }
+
+    @Override
+    public String toString() {
+        return "Locacao:" +
+                "valorLocacao:" + valorLocacao + "\n" +
+                "valorMulta:" + valorMulta + "\n" +
+                "funcionario:" + funcionario + "\n" +
+                "usuario:" + usuario + "\n" +
+                "livro:" + livro + "\n" +
+                "livroLocado:" + livroLocado;
+
+    }
 }
