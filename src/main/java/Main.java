@@ -61,9 +61,23 @@ public class Main {
                     System.out.println("Digite o autor do livro desejado: ");
                     objetoLocacao.getLivro().setAutor(scanner.nextLine());
                     break;
+                case 4:
+//                    do {
+//                        System.out.println("Selecione o cadastro na qual queira acessar \n"
+//                                + "1- Cadastro do funcionario\n"
+//                                + "2- Cadastro do usuario\n"
+//                                + "3- Cadastro do livro\n"
+//                                + "9- Voltar ao menu principal\n");
+//                        opcao = scanner.nextByte();
+//                        switch (opcao) {
+//                            case 1:
+//                        }
+//                    }
+
+                    //TODO: Próximo passo vai ser criar os toString para as classes e chamar nos nossos sout
             }
 
-        }while (opcao!=9);
+        } while (opcao != 9);
 
     }
 }
