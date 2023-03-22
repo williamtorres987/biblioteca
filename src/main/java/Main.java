@@ -62,21 +62,31 @@ public class Main {
                     objetoLocacao.getLivro().setAutor(scanner.nextLine());
                     break;
                 case 4:
-//                    do {
-//                        System.out.println("Selecione o cadastro na qual queira acessar \n"
-//                                + "1- Cadastro do funcionario\n"
-//                                + "2- Cadastro do usuario\n"
-//                                + "3- Cadastro do livro\n"
-//                                + "9- Voltar ao menu principal\n");
-//                        opcao = scanner.nextByte();
-//                        switch (opcao) {
-//                            case 1:
-//                        }
-//                    }
-                    //TODO: FAZER OS TOSTRING PARA USUARIO, ENDERECO, LOCAÇAO
+                    do {
+                        System.out.println("Selecione o cadastro na qual queira acessar \n"
+                                + "1- Cadastro do funcionario\n"
+                                + "2- Cadastro do usuario\n"
+                                + "3- Cadastro do livro\n"
+                                + "9- Voltar ao menu principal\n");
+                        opcao = scanner.nextByte();
+                        switch (opcao) {
+                            case 1:
+                                System.out.println(objetoLocacao.getFuncionario().toString());
+                                break;
+                            case 2:
+                                System.out.println(objetoLocacao.getUsuario().toString());
+                                break;
+                            case 3:
+                                System.out.println(objetoLocacao.getLivro().toString());
+                                break;
+                            default:
+                                System.out.println("\n Opção invalida, digite novamente");
+                        }
+                    }while (opcao != 9);
+                    break;
             }
 
-        } while (opcao != 9);
+        } while (opcao != 0);
 
     }
 }
