@@ -29,4 +29,6 @@ public class Endereco {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
+
+    //TODO:CRIAR toString para endereco
 }

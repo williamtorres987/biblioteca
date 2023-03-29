@@ -21,11 +21,11 @@ public class Main {
                     "[0] - Sair\n" +
                     "Digite aqui a opção ");
             opcao = scanner.nextByte();
-            scanner.nextLine();
+          //  scanner.nextLine();
             switch (opcao) {
                 case 1:
                     System.out.println("Cadastro do funcionário: \n" + "Nome: ");
-                    objetoLocacao.getFuncionario().setNome(scanner.nextLine());
+                    objetoLocacao.getFuncionario().setNome(scanner.next());
                     System.out.println("CPF: ");
                     objetoLocacao.getFuncionario().setCpf(scanner.nextLong());
                     System.out.println("Digite seu cargo: ");
@@ -132,8 +132,6 @@ public class Main {
                     System.out.println("Opção inválida, tente novamente.");
 
             }
-            while (opcao != 0) ;
-
-
-        }
+        } while (opcao != 0);
+    }
 }
