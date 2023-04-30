@@ -30,5 +30,11 @@ public class Endereco {
         this.bairro = bairro;
     }
 
-    //TODO:CRIAR toString para endereco
+    @Override
+    public String toString() {
+        return "\n"
+            + "rua: " + rua + "\n"
+            + "numero: " + numero + "\n"
+            + "bairro: " + bairro + "\n";
+    }
 }
